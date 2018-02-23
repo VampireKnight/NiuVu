@@ -14,7 +14,7 @@ export default new Router({
 	    {
 	      	path: '/',
 	      	name: '首页',
-	     	component:Index
+	     	component:Personal
 	    },
 	    {
 	      	path: '/courlis',
