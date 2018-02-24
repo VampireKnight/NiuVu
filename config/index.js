@@ -10,10 +10,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/': {
-        target: 'http://localhost:8080',
-        changeOrigin: true,
-      }
+/*       '/': {
+            target: 'http://localhost:8080',
+            changeOrigin: true,
+        }*/
     },
 
     // Various Dev Server settings
@@ -43,7 +43,8 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),
-
+  /*  login: path.resolve(__dirname, '../dist/login.html'),
+    register: path.resolve(__dirname, '../dist/register.html'),*/
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',

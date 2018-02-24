@@ -1,14 +1,13 @@
 <template>
+  <div>
    <!--  <mobtop></mobtop>  -->
     <div class="container">
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
+     	注册页面
     </div>
+  </div>
 </template>
 
 <script>
-/*import mobtop from 'mobtop';*/
 export default {
   name: 'App',
   components: { // 声明子组件
