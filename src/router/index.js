@@ -23,10 +23,10 @@ export default new Router({
 	      	name: '首页',
 	     	component:Index,
 	     	children:[
-	     		{path:"/index/courlis",component:CouList},
-	     		{path:"/index/acadlis",component:AcaList},
-	     		{path:"/index/dyslis",component:DysList},
-	     		{path:"/index/personal",component:Personal}
+	     		{path:"/index/courlis",name:"课程列表",component:CouList},
+	     		{path:"/index/acadlis",name:"学院列表",component:AcaList},
+	     		{path:"/index/dyslis",name:"动态列表",component:DysList},
+	     		{path:"/index/personal",name:"个人中心",component:Personal}
 	     	]
 	    },
 	    {
@@ -59,35 +59,4 @@ export default new Router({
 	     	redirect:"/index/personal",
 	    }
 	]
-		/*{
-			path: '/',
-			component: IndexPage
-		},
-		{
-			path: '/orderList',
-			component: OrderListPage
-		},
-		{
-			path: '/detail',
-			component: DetailPage,
-			redirect: '/detail/analysis',
-			children: [
-				{
-					path: 'analysis',
-					component: DetailAnaPage
-				},
-				{
-					path: 'count',
-					component: DetailCouPage
-				},
-				{
-					path: 'forecast',
-					component: DetailForPage
-				},
-				{
-					path: 'publish',
-					component: DetailPubPage
-				}
-			]
-		}*/
 })

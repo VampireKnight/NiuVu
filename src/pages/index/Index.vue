@@ -3,7 +3,7 @@
    <!--  <mobtop></mobtop>  -->
     <div class="container">
       <keep-alive>
-        <router-view></router-view>
+         <router-view></router-view> 
       </keep-alive>
     </div>
     <footer class="mb-footer">
