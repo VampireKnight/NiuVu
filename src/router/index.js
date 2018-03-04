@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-/*import Index from '@/components/Index'*/
+import Login from '@/pages/login/login'
+import Index from '@/pages/index/index'
+
+import Defind from '@/components/Index'
 import CouList from '@/components/CourLis'
 import AcaList from '@/components/AcadLis'
 import DysList from '@/components/DysLis'
 import Personal from '@/components/Personal'
-import Login from '@/pages/login/login'
-import Index from '@/pages/index/index'
+
 
 Vue.use(Router)
 
@@ -19,22 +21,24 @@ export default new Router({
 	     	component:Login
 	    },
 	    {
-	      	path: '/index',
+	      	path: '/',
 	      	name: '首页',
 	     	component:Index,
 	     	children:[
-	     		{path:"/index/courlis",name:"课程列表",component:CouList},
-	     		{path:"/index/acadlis",name:"学院列表",component:AcaList},
-	     		{path:"/index/dyslis",name:"动态列表",component:DysList},
-	     		{path:"/index/personal",name:"个人中心",component:Personal}
-	     	]
+	     		{path:"/index/index",name:"首页",component:Defind,alias:'/index'},
+	     		{path:"/index/courlis",name:"课程列表",component:CouList,alias:'/courlis'},
+	     		{path:"/index/acadlis",name:"学院列表",component:AcaList,alias:'/acadlis'},
+	     		{path:"/index/dyslis",name:"动态列表",component:DysList,alias:'/dyslis'},
+	     		{path:"/index/personal",name:"个人中心",component:Personal,alias:'/personal'}
+	     	],
+	     	redirect:"/index",
 	    },
 	    {
 	      	path: '/',
 	      	name: '首页',
 	     	component:Index,
 	    },
-	    {
+/*	    {
 	      	path: '/courlis',
 	      	name: '课程列表',
 	     	component:Index,
@@ -57,6 +61,6 @@ export default new Router({
 	      	name: '个人中心',
 	     	component:Index,
 	     	redirect:"/index/personal",
-	    }
+	    }*/
 	]
 })
