@@ -8,7 +8,7 @@ import CouList from '@/components/CourLis'
 import AcaList from '@/components/AcadLis'
 import DysList from '@/components/DysLis'
 import Personal from '@/components/Personal'
-
+import Acadmy from '@/components/Acadmy'
 
 Vue.use(Router)
 
@@ -29,7 +29,8 @@ export default new Router({
 	     		{path:"/index/courlis",name:"课程列表",component:CouList,alias:'/courlis'},
 	     		{path:"/index/acadlis",name:"学院列表",component:AcaList,alias:'/acadlis'},
 	     		{path:"/index/dyslis",name:"动态列表",component:DysList,alias:'/dyslis'},
-	     		{path:"/index/personal",name:"个人中心",component:Personal,alias:'/personal'}
+	     		{path:"/index/personal",name:"个人中心",component:Personal,alias:'/personal'},
+	     		{path:"/index/acadmy",name:"个人中心",component:Acadmy,alias:'/acadmy'}
 	     	],
 	     	redirect:"/index",
 	    },
