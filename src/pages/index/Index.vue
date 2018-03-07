@@ -41,6 +41,7 @@ body{
   overflow: hidden;
   position: fixed;
   bottom: 0px;
+  height:100px;
 }
 .nav-list{
   margin: 0px;
