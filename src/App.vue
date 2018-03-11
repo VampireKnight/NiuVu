@@ -8,7 +8,16 @@
       </div> 
   </div>
 </template>
-
+<style type="text/css">
+  body{
+    margin: 0px;
+  }
+  ul,li{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+  }
+</style>
 <script>
 /*console.log($route);*/
 import MobTop from './mobtop';
@@ -22,7 +31,7 @@ export default {
   computed:{
     gtrouter:function(){
         this.mobTit=this.$route.name;
-        console.log(this.mobTit);
+/*        console.log(this.mobTit);*/
         return this.mobTit;
     }
   },

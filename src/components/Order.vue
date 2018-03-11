@@ -2,14 +2,16 @@
 	<div>	
 		<div class="commWid allAcClWrap" style="margin-bottom:50px;">
 			<ul class="allAcCl-tab nav nav-tabs" role="tablist">
-			 	<li role="presentation" class="tab-active third"><a @click="tabChange($event)" data-tab="allClass"  aria-controls="allClass" role="tab" data-toggle="tab">精品课程<span id="clNum"></span></a></li>
-				<li role="presentation" class="third"><a @click="tabChange($event)" data-tab="allAcademy" aria-controls="allAcademy" role="tab" data-toggle="tab">找学院<span id="acNum"></span></a></li>
-				<li role="presentation" class="third"><a @click="tabChange($event)" data-tab="allDystate" aria-controls="allDystate" role="tab" data-toggle="tab">查动态<span id="dyNum"></span></a></li>
+			 	<li role="presentation" class="tab-active fifth"><a @click="tabChange($event)" data-tab="allClass"  aria-controls="allClass" role="tab" data-toggle="tab">已支付<span id="clNum"></span></a></li>
+				<li role="presentation" class="fifth"><a @click="tabChange($event)" data-tab="allAcademy" aria-controls="allAcademy" role="tab" data-toggle="tab">待支付<span id="acNum"></span></a></li>
+				<li role="presentation" class="fifth"><a @click="tabChange($event)" data-tab="allDystate" aria-controls="allDystate" role="tab" data-toggle="tab">已取消<span id="dyNum"></span></a></li>
+				<li role="presentation" class="fifth"><a @click="tabChange($event)" data-tab="allDystate" aria-controls="allDystate" role="tab" data-toggle="tab">退款中<span id="dyNum"></span></a></li>
+				<li role="presentation" class="fifth"><a @click="tabChange($event)" data-tab="allDystate" aria-controls="allDystate" role="tab" data-toggle="tab">已退款<span id="dyNum"></span></a></li>
 			</ul>
 			<div class="allAcCl-tabCont tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="allClass">
 			    	<div id="searcList" class="allcList" ref="allcList">				    	
-						<cour-cla v-for="item in list"></cour-cla>
+						<ord-para v-for="item in list"></ord-para>
 				    </div>					    										
 		    		<infinite-loading @infinite="infiniteHandler" ref="infiniteLoading">
 					    <span slot="no-more">
@@ -25,13 +27,15 @@
 	.nav-tabs{
 		width: 100vw;
 		background-color: gray;
+		height: 20px;
 	}
-	.nav-tabs li.third{
-		width: 30vw;
+	.nav-tabs li.fifth{
+		width: 20vw;
 		color: white;
 		list-style: none;
 		display: inline-block;
 		text-align: center;
+		float: left;
 	}
 	.tab-pane{
 		display: none;
@@ -42,7 +46,7 @@
 </style>
 <script type="text/javascript">
 import InfiniteLoading from 'vue-infinite-loading';
-import CourCla from '../pagecomponents/class';
+import OrdPara from '../pagecomponents/orderpara';
 export default {
 	data() {
 		return{
@@ -71,7 +75,7 @@ export default {
 	    },
 	},
 	components: {
-		CourCla,
+		OrdPara,
     	InfiniteLoading,
   	},
 }	

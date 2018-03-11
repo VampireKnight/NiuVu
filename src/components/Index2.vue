@@ -8,7 +8,7 @@
 	    <div class="swiper-button-next" slot="button-next"></div>
 	    <div class="swiper-scrollbar"   slot="scrollbar"></div>
   </swiper>
-<<<<<<< HEAD
+
   <ul>
   	<li>精品课程</li>
   	<li>免费专区</li>
@@ -18,9 +18,6 @@
   <div class="secPla">
   	<div><span></span></div>
   </div>
-
-=======
->>>>>>> f31d74ee4709b7012cd4e2dce4381f822bb9afd2
 </template>
 
 <script>
@@ -74,7 +71,7 @@
 	      this.swiper;
 /*	      console.log('this is current swiper instance object', this.swiper)
 	      this.swiper.slideTo(3, 1000, false)*/
-	    }
+	    } 
 	}
 </script>
 <style>
