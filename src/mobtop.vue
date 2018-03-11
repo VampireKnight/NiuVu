@@ -11,8 +11,8 @@
 	export default{
 		data() {
 	      	return {
-	   
-	      	}
+		      list: [],
+		    };
 	    },
 	    props:["title"]  	
 	}

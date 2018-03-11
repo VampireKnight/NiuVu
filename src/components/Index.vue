@@ -13,6 +13,10 @@
 	  	<div class="secPla">
 	  		<div class="secTop"><div class="TitLefLine"></div><span>热门课程</span><div style="float:right;">更多>></div></div>
 	  		<div class="secHtCl">
+<<<<<<< HEAD
+=======
+	  			<ind-hotcl></ind-hotcl>
+>>>>>>> f31d74ee4709b7012cd4e2dce4381f822bb9afd2
 	  			<div class="secPara">asdfasdfas</div>
 	  			<div class="secPara">1321313213</div>
 	  			<div class="secPara">asdfasdfas</div>
@@ -23,8 +27,16 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 	export default {
 	  	
+=======
+	import IndHotcl from './IndHcl';
+	export default {
+	  components: { // 声明子组件
+	   	IndHotcl,
+	  },
+>>>>>>> f31d74ee4709b7012cd4e2dce4381f822bb9afd2
 	}
 </script>
 <style>
