@@ -1,0 +1,108 @@
+/* common */
+.compad{
+	padding: 0vw 3vw;
+}
+.myfr{
+	float: right;
+}
+/* login/regiter */
+.lrgWra{
+	padding: 0vw 6.4vw;
+}
+.logForm{
+	padding-top:3.5vh;
+}
+.regForm{
+	padding-top:5vh;
+}
+.lrgPara{
+	padding:1.5vh 2.5vw;
+	margin-top: 4vh;/*7.5*/
+	border-bottom:1px solid #b3b3b3;
+}
+.lrgico:after{
+	content: "";
+	width: 4vw;
+	height: 5vw;
+	position: absolute;
+}
+.phico:after{
+  background: url("../../../static/Img/Icon/phico.png") no-repeat;
+  background-size: 4vw 5vw; 
+}
+.pswdico:after{
+  background: url("../../../static/Img/Icon/pswdico.png") no-repeat;
+  background-size: 4vw 5vw; 
+}
+.codico:after{
+  background: url("../../../static/Img/Icon/codico.png") no-repeat;
+  background-size: 4vw 5vw; 
+}
+.lrgPara input{
+	border: none;
+	outline: none;
+	text-indent: 7.5vw;
+	font-size:4vw;
+	line-height: 5vw;
+	width: 100%;
+	letter-spacing: 0.2em;
+}
+.lrgPara input,.lrgico{
+	vertical-align: top;
+}
+.lrgico:after{
+	content: "";
+	width: 4vw;
+	height: 5vw;
+	position: absolute;
+}
+.lrgbWra{
+	margin-top:10vh;height:5vh;
+}
+.lrgbWra button{
+	font-size: 3vh;
+	color: white;
+	height: 6vh;
+	line-height: 6vh;
+	background-color: #fd5f5f;
+	border-radius: 3vh;
+	width: 100%;
+}
+/* login */
+.logMan{
+	margin-top:10vh;
+}
+.logMan p,.logMan span{
+	font-size: 4.5rem;
+}
+.logMan p{
+	text-align: center;
+}
+.logMan span{
+	padding: 1.5em;
+}
+.logMan span:nth-child(1){
+	color: #8e8e8e;
+}
+.logMan span:nth-child(2){
+	color: #fa4447;
+}
+/* register */
+.lrgPara .codInp{
+	width: 50vw;
+}
+.gtcod{
+	font-size:4vw;
+ 	color: #ff4234;
+}
+.regMan{
+	margin-top:3vh;
+}
+.regMan p{
+	font-size: 4.5rem;
+	text-align: center;
+	color: #fa4447;
+}
+.regMan span{
+	color: #8e8e8e;
+}

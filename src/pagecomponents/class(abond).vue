@@ -1,13 +1,22 @@
 <template scope="props">
 	<div >
-		
+		<slot name="open">		
 			<div class="coursePara">
 				<div class="clpInl imgwra">
 					<img style="width:30vw;" src="http://www.66toujiao.com:80/education-front/file/getFile.front?name=195f00cd-bae2-4f5f-9b5c-118044ee938e.jpg">
 				</div>
-				<slot name="open"></slot>
+				<div class="clpInl clAbout">
+					<div class="sclInfo">
+						<a class="p1" href="class.html?clid=146">每天学会一种K线</a>
+						<p class="p2">课程介绍:<span class="clAca">趋势博弈讲习所</span></p>
+						<p>
+							<span class="p3">免费</span>
+							<span class="classBuy">立即学习</span>
+						</p>					
+					</div>
+				</div>
 			</div>
-
+		</slot>	
 		<slot name="comp">
 			<div class="coursePara">
 				<div class="clpInl imgwra">

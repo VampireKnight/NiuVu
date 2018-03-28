@@ -3,22 +3,15 @@
 		<div class="commWid allAcClWrap" style="margin-bottom:50px;">
 			<kni-tabs @infirefresh="infresh" :tabs="tablist"></kni-tabs>
 				<div role="tabpane" class="tab-pane active" id="allClass">
-			    	<div id="searcList" class="allcList" ref="allcList">
-			    		<!-- <cour-cla v-for="item in list">
-							
-						</cour-cla>	 -->			    	
-						<cour-cla class="courCla">
-							
-						</cour-cla>
-						<!-- <cour-cla v-for="item in list">
-							<slot name="open"></slot>
-						</cour-cla> -->
+			    	所有课程
+			    	<div id="searcList" class="allcList" ref="allcList">				    	
+						<cour-cla v-for="item in list"></cour-cla>
 				    </div>					    										
-		    		<!-- <infinite-loading @infinite="infiniteHandler" ref="infiniteLoading">
+		    		<infinite-loading @infinite="infiniteHandler" ref="infiniteLoading">
 					    <span slot="no-more">
 					      There is no more Hacker News :(
 					    </span>
-					</infinite-loading> -->
+					</infinite-loading>
 				</div>
 			<!-- <div class="allAcCl-tabCont tab-content">
 			    <div role="tabpane" class="tab-pane active" id="allClass">
@@ -35,20 +28,13 @@
 	</div>
 </template>
 <style type="text/css">
-	body{
-		background-color: #f7f7f7;
-	}
-	.allcList .coursePara:first-child{
-		margin-top: 1.3vw;
-	}
 	.nav-tabs{
-		width: 99vw;
-		padding: 0px 0.5vw;
+		width: 100vw;
 		background-color: gray;
 	}
 	.nav-tabs li.third{
-		width: 33vw;
-		color: #434343;
+		width: 30vw;
+		color: white;
 		list-style: none;
 		display: inline-block;
 		text-align: center;

@@ -4,12 +4,13 @@
 			<kni-tabs @infirefresh="infresh" :tabs="tablist"></kni-tabs>
 				<div role="tabpane" class="tab-pane active" id="allClass">
 			    	<div id="searcList" class="allcList" ref="allcList">
-			    		<!-- <cour-cla v-for="item in list">
+			    		<Man-cl>
 							
-						</cour-cla>	 -->			    	
-						<cour-cla class="courCla">
-							
-						</cour-cla>
+							<!-- <div slot="comp"></div>	 -->
+						</Man-cl>				    	
+						<!-- <cour-cla class="courCla" v-for="item in list" >
+							<div slot="open"></div>
+						</cour-cla> -->
 						<!-- <cour-cla v-for="item in list">
 							<slot name="open"></slot>
 						</cour-cla> -->
@@ -63,7 +64,7 @@
 <script type="text/javascript">
 import InfiniteLoading from 'vue-infinite-loading';
 import KniTabs from '../commonponents/KniTabs'
-import CourCla from '../pagecomponents/class';
+import ManCl from '../pagecomponents/mancla';
 export default {
 	data() {
 		return{
@@ -78,17 +79,17 @@ export default {
 				tabs:[
 						{
 				          index: 0,
-				          name: '选项一',
+				          name: '精品课程',
 				          targid:"allClass",
 				        },
 				        {
 				          index: 1,
-				          name: '选项二',
+				          name: '公开课程',
 				          targid:"allAcademy",
 				        },
 				        {
 				          index: 2,
-				          name: '选项三',
+				          name: '直播课程',
 				          targid:"allDystate",
 				        },
 			        ],
@@ -117,7 +118,7 @@ export default {
 	},
 	components: {
 		KniTabs,
-		CourCla,
+		ManCl,
    		InfiniteLoading,
   	},
 }	

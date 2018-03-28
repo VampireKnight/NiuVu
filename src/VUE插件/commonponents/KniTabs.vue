@@ -1,31 +1,24 @@
 <template>
 	<div>	
-		<ul class="ulVided" >
- 			<li v-for="(item,index)  in tabs.tabs"  :class="{active:index==nowIndex}" @click="toggleTabs(index)">
- 				<a @click="tabChange($event)" :data-tab="item.targid">{{item.name}}</a>
+		<ul :class="ulname" >
+			<!-- <li  v-for="item in tabs.tabs" class="tab{{tabs.tabLen}}"></li> -->
+ 			<li v-for="item in tabs.tabs">
+ 				<a  @click="tabChange($event)" :data-tab="item.targid">{{item.name}}</a>
  			</li>
+		 	<!-- <li class="tab-active"><a @click="tabChange($event)" data-tab="allClass"  aria-controls="allClass" role="tab" data-toggle="tab">精品课程<span id="clNum"></span></a></li>
+			<li ><a @click="tabChange($event)" data-tab="allAcademy" aria-controls="allAcademy" role="tab" data-toggle="tab">找学院<span id="acNum"></span></a></li>
+			<li ><a @click="tabChange($event)" data-tab="allDystate" aria-controls="allDystate" role="tab" data-toggle="tab">查动态<span id="dyNum"></span></a></li> -->
 		</ul>
 	</div>
 </template>
 <style type="text/css">
-ul,li{list-style: none;}
-	.ulVided{
-		width: 99vw;
-		padding: 0vw 0.5vw;
-		background-color: white;
+	.nav-tabs{
+		width: 100vw;
+		background-color: gray;
 	}
-	.ulVided li a{
-		font-size: 3.5rem;
-		display: inline-block;
-		line-height: 9.5vw;
-	}
-	.ulVided li.active a{
-		color: #f7444c;
-		border-bottom: 1px solid #f7444c;
-	}
-	.ulVided li:first-child:nth-last-child(3),.ulVided li:first-child:nth-last-child(3)~li{
-		width: 33vw;
-		color: #434343;;
+	.nav-tabs li.third{
+		width: 30vw;
+		color: white;
 		list-style: none;
 		display: inline-block;
 		text-align: center;
@@ -41,13 +34,11 @@ ul,li{list-style: none;}
 export default {
 	created(){
 		console.log(this.tabs.tabLen);
-	/*	this.multi=this.tabs.multiContent;*/
+		this.multi=this.tabs.multiContent;
 		this.ulname="tablen"+this.tabs.tabLen;
 	},
 	data(){
 		return {
-			nowIndex:0,
-
 			multi:false,
 			ulname:'',
 			tabshow:'tab-active',
@@ -93,9 +84,6 @@ export default {
 	             this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
 	      });*/
 	    },
-	     toggleTabs:function(index){
-            this.nowIndex=index;
-        },
 	},
 }	
 </script>
